@@ -11,13 +11,14 @@ body {
 }
 
 .App.dark-theme {
-  max-width: 600px; /* Ancho máximo del formulario */
+  max-width: 100%; /* Ancho máximo del formulario */
   margin: 0 auto; /* Centrar el formulario horizontalmente */
   padding: 2rem; /* Espaciado interno */
   background-color: #333; /* Color de fondo oscuro */
   color: #eee; /* Color de texto claro */
   border-radius: 8px; /* Bordes redondeados */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra más oscura */
+  width: 100%;
 }
 
 
@@ -30,6 +31,7 @@ body {
 
 /* Estilos para el formulario en tema dark */
 .App.dark-theme .dark-form {
+  width: 90%;
   background-color: #444; /* Color de fondo del formulario */
   padding: 1rem; /* Espaciado interno del formulario */
   border-radius: 6px; /* Bordes redondeados */
@@ -50,7 +52,7 @@ body {
 /* Estilos para los inputs y textarea en tema dark */
 .App.dark-theme .dark-input,
 .App.dark-theme .dark-textarea {
-  width: 90%; /* Ancho completo del contenedor */
+  width: 95%; /* Ancho completo del contenedor */
   padding: 0.5rem; /* Relleno interno */
   font-size: 1rem; /* Tamaño de fuente */
   border: 1px solid #555; /* Borde delgada de color gris oscuro */
