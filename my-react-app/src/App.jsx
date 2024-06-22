@@ -15,28 +15,17 @@ function App() {
   };
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className='App'>
+        <header>Formulario de Contacto</header>
+        <form onSubmit={handleSubmit(onSubmit)}>
+            <div>
+            <label htmlFor="fullName">Nombre Completo: </label>
+            <input id="fullName" {...register('fullName', { required: true })} />
+            {errors.fullName && <span className="error">El nombre completo es obligatorio</span>}
+            </div>
+
+        </form>
+    </div>
   )
 }
 
