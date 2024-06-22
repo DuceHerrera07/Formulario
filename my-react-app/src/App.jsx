@@ -18,11 +18,20 @@ function App() {
     <div className='App'>
         <header>Formulario de Contacto</header>
         <form onSubmit={handleSubmit(onSubmit)}>
-            <div>
-            <label htmlFor="fullName">Nombre Completo: </label>
-            <input id="fullName" {...register('fullName', { required: true })} />
-            {errors.fullName && <span className="error">El nombre completo es obligatorio</span>}
-            </div>
+
+           {/* Campo para el nombre */}
+          <div>
+          <label htmlFor="fullName">Nombre Completo: </label>
+          <input id="fullName" {...register('fullName', { required: true })} />
+          {errors.fullName && <span className="error">El nombre completo es obligatorio</span>}
+          </div>
+
+          {/* Campo para el correo electrónico */}
+          <div>
+            <label htmlFor="email">Correo Electrónico</label>
+            <input id="email" type="email" {...register('email', { required: true })} />
+            {errors.email && <span className="error">El correo electrónico es requerido</span>}
+         </div>
 
         </form>
     </div>
