@@ -30,8 +30,22 @@ function App() {
           <div>
             <label htmlFor="email">Correo Electrónico</label>
             <input id="email" type="email" {...register('email', { required: true })} />
-            {errors.email && <span className="error">El correo electrónico es requerido</span>}
+            {errors.email && <span className="error">El correo electrónico es obligatorio</span>}
          </div>
+
+         {/* Campo para el asunto */}
+          <div>
+            <label htmlFor="subject">Asunto</label>
+            <input id="subject" {...register('subject', { required: true })} />
+            {errors.subject && <span className="error">El asunto es obligatorio</span>}
+          </div>
+
+          {/* Campo para el mensaje */}
+          <div>
+            <label htmlFor="message">Mensaje</label>
+            <textarea id="message" {...register('message', { required: true })}></textarea>
+            {errors.message && <span className="error">El mensaje es obligatorio</span>}
+          </div>
 
         </form>
     </div>
