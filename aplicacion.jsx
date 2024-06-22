@@ -14,6 +14,16 @@ export default function aplicacion() {
     setSubmitted(true); // Marcar el formulario como enviado
   };
   return (
-    <div>aplicacion</div>
+    <div className='App'>
+        <header>Formulario de Contacto</header>
+        <form onSubmit={handleSubmit(onSubmit)}>
+            <div>
+            <label htmlFor="fullName">Nombre Completo: </label>
+            <input id="fullName" {...register('fullName', { required: true })} />
+            {errors.fullName && <span className="error">El nombre completo es obligatorio</span>}
+            </div>
+
+        </form>
+    </div>
   )
 }
