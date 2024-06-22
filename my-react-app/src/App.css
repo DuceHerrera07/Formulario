@@ -1,42 +1,74 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Estilos generales para el contenedor principal del formulario */
+.App.dark-theme {
+  max-width: 600px; /* Ancho máximo del formulario */
+  margin: 0 auto; /* Centrar el formulario horizontalmente */
+  padding: 2rem; /* Espaciado interno */
+  background-color: #333; /* Color de fondo oscuro */
+  color: #eee; /* Color de texto claro */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra más oscura */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Estilos para el encabezado del formulario en tema dark */
+.App.dark-theme .dark-header {
+  font-size: 1.5rem; /* Tamaño de fuente del encabezado */
+  font-weight: bold; /* Negrita */
+  margin-bottom: 1rem; /* Espaciado inferior */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilos para el formulario en tema dark */
+.App.dark-theme .dark-form {
+  background-color: #444; /* Color de fondo del formulario */
+  padding: 1rem; /* Espaciado interno del formulario */
+  border-radius: 6px; /* Bordes redondeados */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Estilos para los grupos de campos del formulario */
+.App.dark-theme .form-group {
+  margin-bottom: 1rem; /* Espaciado inferior entre grupos de campos */
 }
 
-.card {
-  padding: 2em;
+/* Estilos para las etiquetas de los campos en tema dark */
+.App.dark-theme .dark-label {
+  display: block; /* Mostrar las etiquetas en bloque (una debajo de la otra) */
+  margin-bottom: 0.5rem; /* Espaciado inferior entre etiqueta y campo */
+  color: #ddd; /* Color de texto claro para etiquetas */
 }
 
-.read-the-docs {
-  color: #888;
+/* Estilos para los inputs y textarea en tema dark */
+.App.dark-theme .dark-input,
+.App.dark-theme .dark-textarea {
+  width: 100%; /* Ancho completo del contenedor */
+  padding: 0.5rem; /* Relleno interno */
+  font-size: 1rem; /* Tamaño de fuente */
+  border: 1px solid #555; /* Borde delgada de color gris oscuro */
+  border-radius: 4px; /* Bordes redondeados */
+  background-color: #666; /* Color de fondo del input */
+  color: #ddd; /* Color de texto claro */
+}
+
+/* Estilos para los mensajes de error en tema dark */
+.App.dark-theme .dark-error {
+  color: #ff4d4f; /* Color rojo para mensajes de error */
+  font-size: 0.875rem; /* Tamaño de fuente más pequeño */
+}
+
+/* Estilos para el botón de envío en tema dark */
+.App.dark-theme .dark-button {
+  background-color: #007bff; /* Color de fondo azul */
+  color: white; /* Color de texto blanco */
+  padding: 0.75rem 1rem; /* Relleno interno */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor a puntero al pasar sobre el botón */
+  font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Estilos para el mensaje de éxito en tema dark */
+.App.dark-theme .dark-success {
+  background-color: #28a745; /* Color de fondo verde */
+  color: white; /* Color de texto blanco */
+  padding: 0.75rem; /* Relleno interno */
+  margin-top: 1rem; /* Espaciado superior */
+  border-radius: 4px; /* Bordes redondeados */
 }
