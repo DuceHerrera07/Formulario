@@ -47,7 +47,13 @@ function App() {
             {errors.message && <span className="error">El mensaje es obligatorio</span>}
           </div>
 
+          {/* Botón de envío del formulario */}
+          <button type="submit">Enviar</button>
         </form>
+
+        {/* Mensaje de éxito cuando el formulario se envía correctamente */}
+        {submitted && <div className="success">¡El mensaje se envio con éxito!</div>}
+
     </div>
   )
 }
